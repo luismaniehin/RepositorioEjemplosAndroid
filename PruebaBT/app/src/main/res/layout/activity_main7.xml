@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main7Activity">
+
+    <LinearLayout
+        android:id="@+id/layoutControles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnListen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Listen" />
+
+        <Button
+            android:id="@+id/btnListDev"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="List devices" />
+
+        <TextView
+            android:id="@+id/txcStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="Status"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAlignment="textEnd" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutControles"
+        android:layout_above="@id/layoutMensaje"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/listaDev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@id/layoutSend" >
+
+        <TextView
+            android:id="@+id/txcMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mensaje"
+            android:lines="10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true" >
+
+        <EditText
+            android:id="@+id/txcEnvio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Send" />
+
+    </LinearLayout>
+
+</RelativeLayout>

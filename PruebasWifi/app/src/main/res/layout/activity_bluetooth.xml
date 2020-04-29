@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BluetoothActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/btnON"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#3eab03"
+            android:padding="15dp"
+            android:text="bluetooth   ON"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnOFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#f49f6e"
+            android:padding="15dp"
+            android:text="bluetooth   OFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnON"
+            android:layout_centerHorizontal="true"
+            android:background="#eae717"
+            android:layout_marginTop="2dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="Scan"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layoutButtons"
+        android:padding="10dp"
+        android:layout_marginTop="10dp" >
+
+        <ListView
+            android:id="@+id/listaDevices"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

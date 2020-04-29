@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnON"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="ON" />
+
+    <Button
+        android:id="@+id/btnOFF"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:text="OFF" />
+
+
+    <Button
+        android:id="@+id/btnAct1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnON"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Ejemplo 1"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored" />
+
+    <Button
+        android:id="@+id/btnAct2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAct1"
+        android:layout_marginStart="20dp"
+        android:text="Ejemplo 2"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored" />
+
+    <Button
+        android:id="@+id/btnAct3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAct2"
+        android:layout_marginStart="20dp"
+        android:text="Ejemplo 3"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored" />
+
+    <Button
+        android:id="@+id/btnAct4"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAct3"
+        android:layout_marginStart="20dp"
+        android:text="Ejemplo 4"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored" />
+
+    <Button
+        android:id="@+id/btnAct5"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAct4"
+        android:layout_marginStart="20dp"
+        android:text="Ejemplo 5"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored" />
+
+    <Button
+        android:id="@+id/btnAct6"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAct5"
+        android:layout_marginStart="20dp"
+        android:text="Ejemplo 6"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored" />
+
+    <Button
+        android:id="@+id/btnAct7"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAct6"
+        android:layout_marginStart="20dp"
+        android:text="Ejemplo 7"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored" />
+
+    <Button
+        android:id="@+id/btnAct8"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAct7"
+        android:layout_marginStart="20dp"
+        android:text="Ejemplo 8"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored" />
+
+    <Button
+        android:id="@+id/btnAct9"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAct8"
+        android:layout_marginStart="20dp"
+        android:text="Ejemplo 9"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored" />
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="200dp"
+        android:layout_height="43dp"
+        android:layout_toRightOf="@id/btnAct1"
+        android:layout_below="@id/btnOFF"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="getBondedDevices" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="200dp"
+        android:layout_height="43dp"
+        android:layout_toRightOf="@id/btnAct2"
+        android:layout_below="@id/textView1"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="startDiscovery" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="200dp"
+        android:layout_height="43dp"
+        android:layout_toRightOf="@id/btnAct3"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="REQUEST_DISCOVERABLE" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="200dp"
+        android:layout_height="43dp"
+        android:layout_toRightOf="@id/btnAct4"
+        android:layout_below="@id/textView3"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Scan Mode" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="200dp"
+        android:layout_height="43dp"
+        android:layout_toRightOf="@id/btnAct5"
+        android:layout_below="@id/textView4"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="handler count" />
+
+</RelativeLayout>
